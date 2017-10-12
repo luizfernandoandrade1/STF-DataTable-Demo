@@ -1,6 +1,10 @@
 # DataTableTest
 
 This project will show you a example of stf-datatable implementation.
+To run this project you need to have node and @angular/cli installed. 
+Into the project folder, execute 'npm install' and then 'ng server', after that open your browse at
+localhost:4200 to see our datatable example. 
+
 
 ## Instalation
 
