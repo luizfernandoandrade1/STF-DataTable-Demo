@@ -3,7 +3,7 @@
   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
     
       <data-table [dataTableProperties]="dataTest">
-          <data-column [columnHeader]="'ID'" [columnField]="'id'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnIcon]="'fa fa-code'" [columnHeader]="'ID'" [columnField]="'id'" (addColumn)="addColumnByEvent($event)"></data-column>
           <data-column [columnHeader]="'Registro'" [columnField]="'registro'" (addColumn)="addColumnByEvent($event)"></data-column>
           <data-column [columnHeader]="'Data'" [columnField]="'data'" (addColumn)="addColumnByEvent($event)"></data-column>
           <data-column [columnHeader]="'Vara'" [columnField]="'vara'" (addColumn)="addColumnByEvent($event)"></data-column>
@@ -12,3 +12,4 @@
   
   </div>
 </div>
+
