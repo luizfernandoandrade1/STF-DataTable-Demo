@@ -3,12 +3,11 @@
   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
     
       <data-table [dataTableProperties]="dataTest">
-          <data-column [columnType]="'checkBox'" (addColumn)="addColumnByEvent($event)"></data-column>
-          <data-column [isVisible]="false" [columnHeader]="'ID'" [columnField]="'id'" (addColumn)="addColumnByEvent($event)"></data-column>
-          <data-column [sortable]="true" [columnHeader]="'Registro'" [columnField]="'registro'" (addColumn)="addColumnByEvent($event)"></data-column>
-          <data-column [sortable]="true" [columnHeader]="'Data'" [columnField]="'data'" (addColumn)="addColumnByEvent($event)"></data-column>
-          <data-column [sortable]="true" [columnHeader]="'Vara'" [columnField]="'vara'" (addColumn)="addColumnByEvent($event)"></data-column>
-          <data-column [sortable]="true" [columnHeader]="'Status'" [columnField]="'status'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnHeader]="'ID'" [columnField]="'id'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnHeader]="'Registro'" [columnField]="'registro'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnHeader]="'Data'" [columnField]="'data'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnHeader]="'Vara'" [columnField]="'vara'" (addColumn)="addColumnByEvent($event)"></data-column>
+          <data-column [columnHeader]="'Status'" [columnField]="'status'" (addColumn)="addColumnByEvent($event)"></data-column>
       </data-table>
   
   </div>
