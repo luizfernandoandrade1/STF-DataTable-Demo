@@ -1,4 +1,3 @@
-import {DataTableUtil} from '../../node_modules/stf-datatable/data-table/data-table.util';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 let data = [{id: 1, registro: "556325/66", data: "25/06/2015", vara: "Cívil", status: "Aguardando Análise" },
@@ -16,21 +15,17 @@ let data = [{id: 1, registro: "556325/66", data: "25/06/2015", vara: "Cívil", s
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent extends DataTableUtil implements AfterViewInit{
+export class AppComponent implements AfterViewInit{
   title = 'app';
   dataTest: any[] = [];
   fullData: any[] = [];
 
-  addColumnByEvent(column: any) {
-    super.addColumnByEvent(column);
-  }
   constructor(){
-    super();
     this.dataTest = data;
   }
 
   public ngAfterViewInit(): void {
-    this.dataTest = super.buildDataTableProperties(this.dataTest);
+    this.dataTest = this.dataTest;
   }
    
 }
